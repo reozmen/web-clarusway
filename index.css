@@ -1,0 +1,197 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.contanier{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr 2fr 4fr 2fr;
+    
+}
+
+.firstpart{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    
+}
+
+
+
+
+#home,#about,#services{
+    display :inline-block;
+    
+}
+
+#home a,#about a,#services a{
+    text-decoration: none;
+}
+
+#home a:hover,#about a:hover,#services a:hover{
+    text-decoration: underline;
+    color:deepskyblue;
+    
+}
+
+#home a:active,#about a:active,#services a:active{
+    text-decoration: underline;
+    color:red;
+}
+
+#home a:visited,#about a:visited,#services a:visited{
+    color: maroon;
+}
+
+#home a:visited:hover,#about a:visited:hover,#services a:visited:hover{
+    text-decoration: underline;
+    color:deepskyblue
+}
+
+
+
+
+.firstpart__navbar{
+    padding: 1rem ;
+    background-color: gray;
+    border-bottom: 0.2rem solid purple;
+    font-weight: bolder;
+    clear:both;
+}
+.firstpart__navbar-left{
+    color:white;
+    float:left;
+}
+
+.firstpart__navbar-right{
+    color:white;
+    text-indent: 1rem;
+    float:right;
+    
+}
+
+.firstpart{
+    
+    background-image: url("./images/showcase.jpg");
+   
+}
+
+.firstpart__end{
+    padding: 1rem;
+    vertical-align: center;
+    background-color: gray;
+    clear: both;
+    min-height: 1.5rem;
+    font-weight: bolder;
+
+
+}
+
+.firstpart__end-left{
+    color:white;
+    float: left;
+    vertical-align: center;
+    padding-top: 0.2rem;
+}
+
+.firstpart__end-right{
+    color:white;
+    float: right;
+    vertical-align: center;
+}
+
+button{
+    background-color: orange;
+    
+}
+
+.firstpart__section{
+   
+    color: white;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.secondpart__section{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: smaller;
+}
+
+.secondpart__section-logo1,.secondpart__section-logo2,.secondpart__section-logo3{
+    text-align: center;
+}
+
+.thirdpart__footer{
+    background-color: gray;
+    color:white;
+    text-align: center;
+   
+
+}
+
+.image{
+    width: 3rem;
+    height: 4rem;
+}
+
+#footerlogo{
+    height: 2rem;
+}
+
+@media screen and (max-width:480px) {
+    .firstpart__navbar{ 
+        font-size: 0.7rem;
+    }
+
+    .firstpart__section h1{
+        font-size: 1.2rem;
+    }
+
+    .firstpart__section p{
+        font-size: 0.6rem;
+    }
+
+    .firstpart__end-left{
+        font-size: 0.7rem;
+        padding-top: 0.3rem;
+       
+    }
+     
+    .firstpart__end-right input{
+        width: 4rem;
+    }
+
+    .firstpart__end-right input{
+        font-size: 0.5rem;
+        
+    }
+
+    .firstpart__end-right button{
+        font-size: 0.6rem;
+        
+    }
+
+    .secondpart__section{
+        font-size: 0.6rem;
+        
+    }
+
+    .secondpart__section-logo1,.secondpart__section-logo2,.secondpart__section-logo3{
+        padding: 0 0.1rem;
+        text-align: center;
+    }
+
+    .thirdpart__footer{
+        font-size: 0.8rem;
+    }
+
+
+    
+}
+
